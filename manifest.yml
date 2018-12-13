@@ -1,0 +1,12 @@
+---
+applications:
+- instances: 1
+  timeout: 180
+  name: WatsonAssistantBasicSHPAO
+  buildpack: sdk-for-nodejs
+  command: npm start
+  memory: 256MB
+  domain: mybluemix.net
+  host: watson-assistant-basic-shpao
+  services:
+    - watson-assistant-bas-conversation-1544738934102
